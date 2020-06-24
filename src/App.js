@@ -9,6 +9,7 @@ import Thenation from "./pages/news/Thenation";
 import Footer from "./layout/Footer";
 import { Toolbar } from "./layout/sidenav/Toolbar";
 import Header from "./layout/Header";
+import Landing from "./pages/landing/Landing";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 				<div className='row flex-md-nowrap'>
 					<Toolbar />
 					<Switch>
+						<Route path='/' exact component={Landing} />
 						<div className=' col-12 col-md-10 '>
 							<Route path='/vanguard' component={Vanguard} />
 							<Route path='/punch' component={Punch} />
