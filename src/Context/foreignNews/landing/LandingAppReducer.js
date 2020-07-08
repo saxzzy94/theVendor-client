@@ -3,11 +3,13 @@ export default (state, action) => {
 		case "GET_HOME":
 			return {
 				...state,
+				loading: false,
 				home: action.payload,
 			};
 		case "GET_ERROR":
 			return {
 				...state,
+				loading: false,
 				error: action.payload,
 			};
 		default:

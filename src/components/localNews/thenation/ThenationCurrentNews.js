@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
-import { GlobalContext } from "../../Context/vanguard/VanguardGlobalState";
+import { GlobalContext } from "../../../Context/localNews/thenation/ThenationGlobalState";
 
-export const VanguardCurrentNews = () => {
+export const ThenationCurrentNews = () => {
 	const { currentNews, getCurrentNews } = useContext(GlobalContext);
 
 	useEffect(() => {
@@ -21,7 +21,7 @@ export const VanguardCurrentNews = () => {
 							alt='curr-img'
 						/>
 						<div className='card-body'>
-							<div style={{ dispaly: "flex" }}>
+							<div style={{ display: "flex" }}>
 								<div className='card-text'>{news.currentNewsTime}</div>
 								<div className='card-text'>{news.currentNewsDate}</div>
 							</div>

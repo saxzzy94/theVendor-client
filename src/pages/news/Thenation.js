@@ -1,8 +1,8 @@
 import React from "react";
-import { ThenationCurrentNews } from "../../components/thenation/ThenationCurrentNews";
-import { ThenationLatestNewsList } from "../../components/thenation/ThenationLatestNewsList";
+import { ThenationCurrentNews } from "../../components/localNews/thenation/ThenationCurrentNews";
+import { ThenationLatestNewsList } from "../../components/localNews/thenation/ThenationLatestNewsList";
 
-import { GlobalProvider } from "../../Context/thenation/ThenationGlobalState";
+import { GlobalProvider } from "../../Context/localNews/thenation/ThenationGlobalState";
 
 export default function Thenation() {
 	return (

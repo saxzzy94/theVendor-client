@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
-import { GlobalContext } from "../../Context/thisday/ThisdayGlobalState";
+import { GlobalContext } from "../../../Context/localNews/punch/PunchGlobalState";
 
-export const ThisdayLatestNewsList = () => {
+export const PunchLatestNewsList = () => {
 	const { latestNews, getLatestNews } = useContext(GlobalContext);
 
 	useEffect(() => {
@@ -16,11 +16,6 @@ export const ThisdayLatestNewsList = () => {
 				{latestNews.map(news => (
 					<div className='card'>
 						<a className='card-link' href={news.latestNewsLink}>
-							<img
-								src={news.latestNewsImg}
-								className='card-img-top'
-								alt='curr-img'
-							/>
 							<div className='card-body'>
 								<div style={{ display: "flex" }}>
 									<div className='card-text'>{news.latestNewsTime}</div>

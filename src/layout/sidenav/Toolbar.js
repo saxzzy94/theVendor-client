@@ -31,7 +31,8 @@ export const Toolbar = () => {
 						</li>
 						<li className='nav-item dropdown'>
 							<Link
-								class='navbar-toggler-dropdown'
+								to='#'
+								className='navbar-toggler-dropdown'
 								type='button'
 								data-toggle='collapse'
 								data-target='#navbarToggleExternalContent'
@@ -62,7 +63,7 @@ export const Toolbar = () => {
 							<Link
 								className='nav-link disabled'
 								to='#'
-								tabindex='-1'
+								tabIndex='-1'
 								aria-disabled='true'
 							>
 								Disabled
@@ -80,7 +81,8 @@ export const Toolbar = () => {
 						</li>
 						<li className='nav-item dropdown'>
 							<Link
-								class='navbar-toggler-dropdown'
+								to='#'
+								className='navbar-toggler-dropdown'
 								type='button'
 								data-toggle='collapse'
 								data-target='#navbarToggleExternalContent'
@@ -111,7 +113,7 @@ export const Toolbar = () => {
 							<Link
 								className='nav-link disabled'
 								to='#'
-								tabindex='-1'
+								tabIndex='-1'
 								aria-disabled='true'
 							>
 								Disabled
@@ -129,7 +131,8 @@ export const Toolbar = () => {
 						</li>
 						<li className='nav-item dropdown'>
 							<Link
-								class='navbar-toggler-dropdown'
+								to='#'
+								className='navbar-toggler-dropdown'
 								type='button'
 								data-toggle='collapse'
 								data-target='#navbarToggleExternalContent'
@@ -160,7 +163,7 @@ export const Toolbar = () => {
 							<Link
 								className='nav-link disabled'
 								to='#'
-								tabindex='-1'
+								tabIndex='-1'
 								aria-disabled='true'
 							>
 								Disabled

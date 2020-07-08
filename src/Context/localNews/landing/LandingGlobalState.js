@@ -5,6 +5,8 @@ import axios from "axios";
 
 const initialState = {
 	home: [],
+	loading: true,
+	error: false,
 };
 //Create Context
 export const GlobalContext = createContext(initialState);
@@ -24,7 +26,7 @@ export const GlobalProvider = ({ children }) => {
 		} catch (error) {
 			dispatch({
 				type: "GET_ERROR",
-				payload: error,
+				payload: true,
 			});
 		}
 	}
@@ -33,6 +35,8 @@ export const GlobalProvider = ({ children }) => {
 		<GlobalContext.Provider
 			value={{
 				home: state.home,
+				loading: state.loading,
+				error: state.error,
 				getHome,
 			}}
 		>

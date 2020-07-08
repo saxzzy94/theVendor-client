@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
-import { GlobalContext } from "../../Context/vanguard/VanguardGlobalState";
+import { GlobalContext } from "../../../Context/localNews/thenation/ThenationGlobalState";
 
-export const VanguardLatestNewsList = () => {
+export const ThenationLatestNewsList = () => {
 	const { latestNews, getLatestNews } = useContext(GlobalContext);
 
 	useEffect(() => {
@@ -11,7 +11,7 @@ export const VanguardLatestNewsList = () => {
 
 	return (
 		<>
-			<div className='card-header'>LATEST VANGUARD NEWS</div>
+			<div className='card-header'>LATEST THENATION NEWS</div>
 			<ul className='list-group'>
 				{latestNews.map(news => (
 					<div className='card'>

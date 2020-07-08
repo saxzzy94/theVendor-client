@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
-import { GlobalContext } from "../../Context/thenation/ThenationGlobalState";
+import { GlobalContext } from "../../../Context/localNews/thisday/ThisdayGlobalState";
 
-export const ThenationCurrentNews = () => {
+export const ThisdayCurrentNews = () => {
 	const { currentNews, getCurrentNews } = useContext(GlobalContext);
 
 	useEffect(() => {
@@ -11,7 +11,7 @@ export const ThenationCurrentNews = () => {
 
 	return (
 		<>
-			<div className='card-header'>JUST IN</div>{" "}
+			<div className='card-header'>ThisDay - JUST IN</div>{" "}
 			{currentNews.map(news => (
 				<div className='card'>
 					<a className='card-link' href={news.currentNewsLink}>

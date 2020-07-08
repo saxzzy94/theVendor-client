@@ -1,7 +1,7 @@
 import React from "react";
-import { PunchCurrentNews } from "../../components/punch/PunchCurrentNews";
-import { PunchLatestNewsList } from "../../components/punch/PunchLatestNewsList";
-import { GlobalProvider } from "../../Context/punch/PunchGlobalState";
+import { PunchCurrentNews } from "../../components/localNews/punch/PunchCurrentNews";
+import { PunchLatestNewsList } from "../../components/localNews/punch/PunchLatestNewsList";
+import { GlobalProvider } from "../../Context/localNews/punch/PunchGlobalState";
 
 export default function Punch() {
 	return (

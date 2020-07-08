@@ -7,19 +7,20 @@ import Thisday from "./pages/news/Thisday";
 import Thenation from "./pages/news/Thenation";
 
 import Footer from "./layout/Footer";
-import { Toolbar } from "./layout/sidenav/Toolbar";
+
 import Header from "./layout/Header";
-import Landing from "./pages/landing/Landing";
+import Local from "./pages/landing/Local";
+import Foreign from "./pages/landing/Foreign";
 
 function App() {
 	return (
 		<Router>
 			<Header />
-			<div className='container-fluid'>
-				<div className='row flex-md-nowrap'>
-					<Toolbar />
+			<main role='main' className='container'>
+				<div className='row'>
 					<Switch>
-						<Route path='/' exact component={Landing} />
+						<Route path='/' exact component={Local} />
+						<Route path='/world' component={Foreign} />
 						<div className=' col-12 col-md-10 '>
 							<Route path='/vanguard' component={Vanguard} />
 							<Route path='/punch' component={Punch} />
@@ -28,7 +29,7 @@ function App() {
 						</div>
 					</Switch>
 				</div>
-			</div>
+			</main>
 			<Footer />
 		</Router>
 	);

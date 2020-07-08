@@ -1,8 +1,8 @@
 import React from "react";
-import { VanguardCurrentNews } from "../../components/vanguard/VanguardCurrentNews";
-import { VanguardLatestNewsList } from "../../components/vanguard/VanguardLatestNewsList";
+import { VanguardCurrentNews } from "../../components/localNews/vanguard/VanguardCurrentNews";
+import { VanguardLatestNewsList } from "../../components/localNews/vanguard/VanguardLatestNewsList";
 
-import { GlobalProvider } from "../../Context/vanguard/VanguardGlobalState";
+import { GlobalProvider } from "../../Context/localNews/vanguard/VanguardGlobalState";
 
 export default function Vanguard() {
 	return (

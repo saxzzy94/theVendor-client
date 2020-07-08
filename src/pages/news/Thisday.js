@@ -1,8 +1,8 @@
 import React from "react";
-import { ThisdayCurrentNews } from "../../components/thisday/ThisdayCurrentNews";
-import { ThisdayLatestNewsList } from "../../components/thisday/ThisdayLatestNewsList";
+import { ThisdayCurrentNews } from "../../components/localNews/thisday/ThisdayCurrentNews";
+import { ThisdayLatestNewsList } from "../../components/localNews/thisday/ThisdayLatestNewsList";
 
-import { GlobalProvider } from "../../Context/thisday/ThisdayGlobalState";
+import { GlobalProvider } from "../../Context/localNews/thisday/ThisdayGlobalState";
 
 export default function Thisday() {
 	return (

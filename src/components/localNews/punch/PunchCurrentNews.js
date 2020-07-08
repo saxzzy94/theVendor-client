@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from "react";
-import { GlobalContext } from "../../Context/punch/PunchGlobalState";
+import { GlobalContext } from "../../../Context/localNews/punch/PunchGlobalState";
 
 export const PunchCurrentNews = () => {
 	const { currentNews, getCurrentNews } = useContext(GlobalContext);

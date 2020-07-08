@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
-import { GlobalContext } from "../../Context/thenation/ThenationGlobalState";
+import { GlobalContext } from "../../../Context/localNews/thisday/ThisdayGlobalState";
 
-export const ThenationLatestNewsList = () => {
+export const ThisdayLatestNewsList = () => {
 	const { latestNews, getLatestNews } = useContext(GlobalContext);
 
 	useEffect(() => {
@@ -11,11 +11,16 @@ export const ThenationLatestNewsList = () => {
 
 	return (
 		<>
-			<div className='card-header'>LATEST THENATION NEWS</div>
+			<div className='card-header'>LATEST PUNCH NEWS</div>
 			<ul className='list-group'>
 				{latestNews.map(news => (
 					<div className='card'>
 						<a className='card-link' href={news.latestNewsLink}>
+							<img
+								src={news.latestNewsImg}
+								className='card-img-top'
+								alt='curr-img'
+							/>
 							<div className='card-body'>
 								<div style={{ display: "flex" }}>
 									<div className='card-text'>{news.latestNewsTime}</div>
